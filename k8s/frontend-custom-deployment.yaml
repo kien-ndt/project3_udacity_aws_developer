@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-custom
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-custom
+  template:
+    metadata:
+      labels:
+        app: frontend-custom
+    spec:
+      containers:
+      - name: frontend-custom
+        image: frontend-custom:local
+        ports:
+        - containerPort: 80
