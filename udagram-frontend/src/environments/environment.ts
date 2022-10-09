@@ -7,7 +7,7 @@ const API_GATEWAY_HOST = process.env.API_GATEWAY_HOST || "localhost"
 export const environment = {
   production: false,
   appName: 'Udagram',
-  apiHost: 'http://' + API_GATEWAY_HOST + ':8080/api/v0'
+  apiHost: `http://${API_GATEWAY_HOST}:8080/api/v0`
 };
 
 /*
