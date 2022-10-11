@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend-custom
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: frontend-custom
@@ -17,3 +17,6 @@ spec:
         image: frontend-custom:local
         ports:
         - containerPort: 80
+        env:
+          - name: API_GATEWAY_HOST
+            value: reverseproxy
