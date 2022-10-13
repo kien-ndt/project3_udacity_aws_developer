@@ -5,7 +5,7 @@ metadata:
   namespace: default
 data:
   POSTGRES_DB: udagram
-  POSTGRES_HOST: 192.168.0.106
+  POSTGRES_HOST: udacity-project3.cvxxmludh2sw.us-east-1.rds.amazonaws.com
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   AWS_BUCKET: project3-udacity-uploadpicture
