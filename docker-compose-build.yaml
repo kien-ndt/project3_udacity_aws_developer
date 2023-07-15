@@ -1,3 +1,4 @@
+# docker-compose -f ... build --parallel
 version: "3"
 services:
   reverseproxy:
